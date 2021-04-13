@@ -39,13 +39,36 @@ def printNums():
   print()
 
 def printCourt():
+  s = ["wands", "cups", "swords", "pentacles"]
+  e = ["earth", "fire", "water", "air"]
+  c = ["Page", "Knight", "Queen", "King"]
   print("================================================")
   print("|> COURT CARDS")
   print("================================================\n")
-  print("Page: \n\t+ earth\n\t\t+ wands: rebuilding\n\t\t+ cups: new life\n\t\t+ swords: finance\n\t\t+ pentacles: grounded")
-  print("Knight: \n\t+ fire\n\t\t+ wands: quest for passion\n\t\t+ cups: quest for love\n\t\t+ swords: quest for philosophy\n\t\t+ pentacles: quest for physical")
-  print("Queen: \n\t+ water\n\t\t+ wands: nurturing passion\n\t\t+ cups: nurturing love\n\t\t+ swords: nurturing intellect\n\t\t+ pentacles: nurturing environment")
-  print("King: \n\t+ air\n\t\t+ wands: harbinger\n\t\t+ cups: poet\n\t\t+ swords: philosopher\n\t\t+ pentacles: planner")
+  for i in range(4):
+    if c[i] == "Page":
+      d1 = ": rebuilding\n\t\t+ "
+      d2 = ": new life\n\t\t+ "
+      d3 = ": finance\n\t\t+ "
+      d4 = ": grounded"
+    elif c[i] == "Knight":
+      d1 = ": quest for passion\n\t\t+ "
+      d2 = ": quest for love\n\t\t+ "
+      d3 = ": quest for philosophy\n\t\t+ "
+      d4 = ": quest for physical"
+    elif c[i] == "Queen":
+      d1 = ": nurturing passion\n\t\t+ "
+      d2 = ": nurturing love\n\t\t+ "
+      d3 = ": nurturing intellect\n\t\t+ "
+      d4 = ": nurturing environment"
+    else:
+      d1 = ": harbinger\n\t\t+ "
+      d2 = ": poet\n\t\t+ "
+      d3 = ": philosopher\n\t\t+ "
+      d4 = ": planner"
+    
+    print(c[i] + ": \n\t+ " + e[i] + "\n\t\t+ " + s[0] + d1 + s[1] + d2 + s[2] + d3 + s[3] + d4)
+
   print()
 
   print("\nCourt cards can represent:")

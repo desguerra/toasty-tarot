@@ -6,6 +6,10 @@ import random
 # TODO: add Major Arcana cards #
 ################################
 
+###################################################
+# TODO: add keywords according to element/value?? #
+###################################################
+
 # Card class
 class Card:
 
@@ -16,27 +20,12 @@ class Card:
     self.element = element
     self.zodiac = zodiac
 
+  def show(self):
+    showCard = "\t" + self.value + " of " + self.suit + "\n\t\t" + self.quality + self.element + "\n\t\tZodiac(s): " + self.zodiac + "\n"
+    print(showCard)
+
   def __str__(self):
-    # change 1 into 'ace', 11 into 'page', 12 into 'knight', etc.
-    if (self.value == 1):
-      self.value = "Ace"
-    elif (self.value == 11):
-      self.value = "Page"
-    elif (self.value == 12):
-      self.value = "Knight"
-    elif (self.value == 13):
-      self.value = "Queen"
-    elif (self.value == 14):
-      self.value = "King"
-    else:
-      pass
-
-    ##################################################
-    # TODO: add keywords accoring to element/value?? #
-    ##################################################
-
-    # print out card
-    ret = "\t" + str(self.value) + " of " + self.suit + "\n\t\t" + self.quality + self.element + "\n\t\tZodiac(s): " + self.zodiac + "\n"
+    ret = "testing card funtionality..."
     return ret
 
 # Deck class
@@ -44,11 +33,16 @@ class Deck:
 
   def __init__(self):
     self.deck = []
+    self.build()
+
+  # builds deck
+  def build(self):
     suits = ["Wands", "Cups", "Swords", "Pentacles"]
     qual = ""
     elem = ""
     zodList = []
     zod = ""
+    val = ""
     for i in range(4):
       if (suits[i] == "Wands"):
         elem = "Fire"
@@ -85,10 +79,39 @@ class Deck:
         else:
           zod = zodList[i]
 
-        card = Card(j, suits[i], qual, elem, zod)
+        if (j == 1):
+          val = "Ace"
+        elif (j == 2):
+          val = "Two"
+        elif (j == 3):
+          val = "Three"
+        elif (j == 4):
+          val = "Four"
+        elif (j == 5):
+          val = "Five"
+        elif (j == 6):
+          val = "Six"
+        elif (j == 7):
+          val = "Seven"
+        elif (j == 8):
+          val = "Eight"
+        elif (j == 9):
+          val = "Nine"
+        elif (j == 10):
+          val = "Ten"
+        elif (j == 11):
+          val = "Page"
+        elif (j == 12):
+          val = "Knight"
+        elif (j == 13):
+          val = "Queen"
+        else:
+          val = "King"
+
+        card = Card(val, suits[i], qual, elem, zod)
         self.deck.append(card)
 
-  # shuffles order of deck
+  # shuffles order of deck (Fisher Yates shuffle algorithm)
   def shuffle(self):
     for i in range(len(self.deck)):
       r = random.randint(0, len(self.deck)-1)
@@ -130,7 +153,8 @@ while True:
     print("\n================================================")
     print("|> " + q)
     print("================================================\n")
-    print(deck.draw())
+    c = deck.draw()
+    c.show()
 
   elif action == "2":
     q = input("\nWhat would you like guidance on? (i.e. 'Where should I direct my energy today?'): ")
@@ -138,9 +162,12 @@ while True:
     print("\n================================================")
     print("|> " + q)
     print("================================================\n")
-    print(deck.draw())
-    print(deck.draw())
-    print(deck.draw())
+    c1 = deck.draw()
+    c1.show()
+    c2 = deck.draw()
+    c2.show()
+    c3 = deck.draw()
+    c3.show()
 
   elif action == "3":
     while True:
