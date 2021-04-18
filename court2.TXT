@@ -1,0 +1,12 @@
+Court cards can represent:
++ the sitter
++ the person who the reading is about
++ outside person
++ positive aspect in situation
++ negative aspect in situation
++ specific situation
++ course of action
++ estimated time something will happen
++ maturity
++ person who hold the key to outcome
+  

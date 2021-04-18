@@ -1,0 +1,12 @@
+Cardinal:
++ initiator and leader signs
++ represent start of their respective seasons
++ Aries, Cancer, Libra, Capricorn
+Fixed:
++ reliable and stable signs
++ dedicated with strong follow through
++ Leo, Scorpio, Aquarius, Taurus
+Mutable:
++ adaptable and versitile signs
++ represent end of their respective seasons
++ Sagittarius, Pisces, Gemini, Virgo

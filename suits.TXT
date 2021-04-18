@@ -1,0 +1,20 @@
+Wands:
++ fire
++ action & willpower (focusing time & energy, personal growth
++ active energy like air/swords
++ Aries, Leo, Sagittarius
+Cups:
++ water
++ emotions (internal & external, relationships)
++ passive energy like earth/pentacles
++ Cancer, Scorpio, Pisces
+Swords:
++ air
++ mental (higher thinking, life purpose, spirituality)
++ active energy, like fire/wands
++ Libra, Aquarius, Gemini
+Pentacles: 
++ earth
++ physical & earthly matters (money, family, health, stability)
++ passive energy, like water/cups
++ Capricorn, Taurus, Virgo

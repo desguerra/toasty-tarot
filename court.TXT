@@ -1,0 +1,20 @@
+Page of:
++ wands - earth/fire: rebuilding
++ cups - earth/water: new life
++ swords - earth/air: finance
++ pentacles - earth/earth: grounded
+Knight of:
++ wands - fire/fire: quest for passion
++ cups - fire/water: quest for love
++ swords - fire/air: quest for philosophy
++ pentacles - fire/earth: quest for physical
+Queen of:
++ wands - water/fire: nurturing passion
++ cups - water/water: nurturing love
++ swords - water/air: nurturing intellect
++ pentacles - water/earth: nurturing environment
+King of:
++ wands - air/fire: harbinger
++ cups - air/water: poet
++ swords - air/air: philosopher
++ pentacles - air/earth: planner
