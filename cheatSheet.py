@@ -21,8 +21,8 @@ def printElem():
   print("================================================")
   print("|> ELEMENTS + SUITS")
   print("================================================\n")
-  ps = open("elem.txt", "r")
-  pooploop(ps)
+  pe = open("elem.txt", "r")
+  pooploop(pe)
   
   print()
 
