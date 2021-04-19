@@ -113,22 +113,21 @@ class Deck:
     qual = ""
     elem = ""
     ast = ""
-    for i in range(4):
-      for j in range(0,22):
+    for i in range(0,22):
 
-        if (j == (4 or 8 or 10 or 14 or 16 or 19 or 20)):
-          elem = "Fire"
-        elif (j == (2 or 7 or 12 or 13 or 18)):
-          elem = "Water"
-        elif (j == (0 or 1 or 6 or 11 or 17)):
-          elem = "Air"
-        else:
-          elem = "Earth"
+      if (i in [4, 8, 10, 14, 16, 19, 20]):
+        elem = "Fire"
+      elif (i in [2, 7, 12, 13, 18]):
+        elem = "Water"
+      elif (i in [0, 1, 6, 11, 17]):
+        elem = "Air"
+      else:
+        elem = "Earth"
 
-        ast = name[j][1]
+      ast = name[i][1]
 
-        card = Card(j, name[j][0], qual, elem, ast)
-        self.deck.append(card)
+      card = Card(i, name[i][0], qual, elem, ast)
+      self.deck.append(card)
 
   # shuffles order of deck (Fisher Yates shuffle algorithm)
   def shuffle(self):
