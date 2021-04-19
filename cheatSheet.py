@@ -17,11 +17,11 @@ def printQualities():
   print()
 
 
-def printSuits():
+def printElem():
   print("================================================")
-  print("|> SUITS")
+  print("|> ELEMENTS + SUITS")
   print("================================================\n")
-  ps = open("suits.txt", "r")
+  ps = open("elem.txt", "r")
   pooploop(ps)
   
   print()
@@ -53,7 +53,7 @@ def masterCheatSheet():
 
   printQualities()
 
-  printSuits()
+  printElem()
 
   printNums()
 

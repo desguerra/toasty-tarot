@@ -9,4 +9,3 @@ Court cards can represent:
 + estimated time something will happen
 + maturity
 + person who hold the key to outcome
-  
